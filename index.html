@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="EasyToolsHub offers free, simple online calculators, converters and productivity tools. No registration required.">
+  <meta name="theme-color" content="#155eef">
+  <title>EasyToolsHub — Free Online Tools</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-icon">✦</span> EasyTools<span>Hub</span></a>
+  <nav><a href="#tools">All tools</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">SIMPLE · FAST · FREE</span>
+      <h1>Useful tools.<br><span>Less hassle.</span></h1>
+      <p>Everyday calculators and online utilities, all in one place. No account or registration needed.</p>
+      <a class="primary-btn" href="#tools">Explore all tools <span>→</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="art-card card-a">％<small>Percentage</small></div><div class="art-card card-b">⌁<small>Convert</small></div><div class="art-card card-c">▦<small>Calculate</small></div><div class="art-orb"></div></div>
+  </section>
+
+  <section class="tool-section" id="tools">
+    <div class="section-heading"><div><span class="eyebrow">THE TOOLBOX</span><h2>Find the right tool</h2><p>Choose a tool and get your result in seconds.</p></div><div class="search-wrap"><span>⌕</span><input id="toolSearch" type="search" placeholder="Search tools..." aria-label="Search tools"></div></div>
+    <div class="category-row">
+      <button class="filter active" data-filter="all">All tools</button><button class="filter" data-filter="calculators">Calculators</button><button class="filter" data-filter="text">Text</button><button class="filter" data-filter="generators">Generators</button><button class="filter" data-filter="images">Image tools</button><button class="filter" data-filter="converters">Converters</button>
+    </div>
+    <div class="tool-grid" id="toolGrid">
+      <button class="tool-card" data-tool="age" data-category="calculators"><span class="tool-icon blue">🎂</span><b>Age Calculator</b><small>Calculate your exact age from your date of birth.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="bmi" data-category="calculators"><span class="tool-icon violet">⚖</span><b>BMI Calculator</b><small>Estimate your body mass index using height and weight.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="percentage" data-category="calculators"><span class="tool-icon cyan">％</span><b>Percentage Calculator</b><small>Find percentages, increases and decreases.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="loan" data-category="calculators"><span class="tool-icon orange">€</span><b>Loan Calculator</b><small>Estimate monthly payments and total interest.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="salary" data-category="calculators"><span class="tool-icon green">▤</span><b>Salary Calculator</b><small>Convert hourly, monthly and annual pay.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="currency" data-category="converters"><span class="tool-icon blue">⇄</span><b>Currency Converter</b><small>Convert currencies using an exchange rate you enter.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="word" data-category="text"><span class="tool-icon violet">¶</span><b>Word Counter</b><small>Count words, characters, sentences and paragraphs.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="password" data-category="generators"><span class="tool-icon green">🔐</span><b>Password Generator</b><small>Create a random password in your browser.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="qr" data-category="generators"><span class="tool-icon cyan">▦</span><b>QR Code Generator</b><small>Turn text or a link into a QR code.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="compress" data-category="images"><span class="tool-icon orange">▧</span><b>Image Compressor</b><small>Reduce JPG, PNG or WebP image file size.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="resize" data-category="images"><span class="tool-icon blue">⤢</span><b>Image Resizer</b><small>Resize an image to your chosen dimensions.</small><span class="card-link">Open tool →</span></button>
+      <button class="tool-card" data-tool="units" data-category="converters"><span class="tool-icon violet">⇌</span><b>Unit Converter</b><small>Convert length, weight and temperature units.</small><span class="card-link">Open tool →</span></button>
+    </div>
+    <p class="no-results" id="noResults" hidden>No tools found. Try another search.</p>
+  </section>
+
+  <section class="ad-slot" aria-label="Advertisement area"><span>Advertisement</span><p>Ad space — ads may appear here after the site is approved.</p></section>
+  <section class="trust-row"><div><span>✓</span><b>Free to use</b><small>No subscriptions or hidden fees.</small></div><div><span>⚡</span><b>Quick results</b><small>Simple tools with clear outputs.</small></div><div><span>🔒</span><b>Privacy-minded</b><small>Most calculations happen in your browser.</small></div></section>
+</main>
+<footer><a class="brand" href="index.html">EasyTools<span>Hub</span></a><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a></div><small>© <span id="year"></span> EasyToolsHub. All rights reserved.</small></footer>
+
+<div class="modal-backdrop" id="toolModal" hidden>
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button><span class="eyebrow">EASYTOOLSHUB TOOL</span><h2 id="modalTitle">Tool</h2><div id="toolBody"></div>
+  </section>
+</div>
+<div class="cookie-banner" id="cookieBanner" hidden><div><b>Your privacy matters</b><p>This starter site uses essential browser storage only for remembering your choice. Advertising cookies are not active until you configure a compliant consent solution.</p></div><button id="cookieAccept" class="primary-btn">OK</button></div>
+</body></html>
